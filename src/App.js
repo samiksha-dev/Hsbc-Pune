@@ -38,7 +38,7 @@ function App() {
         ':before':isSelected?{
     backgroundImage:`url(${tick})`,
     content:`"."`,
-    display: 'block',
+    display:'block',
     backgroundSize:'20px 20px',
     backgroundRepeat:'no-repeat'
         }:''
@@ -47,7 +47,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Select options={options} styles={colorStyles}/>
+      <Select closeMenuOnSelect={false} options={options} styles={colorStyles}/>
     </div>
   );
 }
